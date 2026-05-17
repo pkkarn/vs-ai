@@ -1,5 +1,3 @@
-// inputNode.js
-
 import { useState } from 'react';
 import { Position } from 'reactflow';
 import { BaseNode } from './BaseNode';
@@ -9,18 +7,14 @@ export const InputNode = ({ id, data }) => {
   const [inputType, setInputType] = useState(data.inputType || 'Text');
 
   return (
-    <BaseNode
-      id={id}
-      label="Input"
-      handles={[{ type: 'source', position: Position.Right, id: 'value' }]}
-    >
-      <label style={{ display: 'flex', flexDirection: 'column', fontSize: '12px' }}>
+    <BaseNode id={id} label="Input" handles={[{ type: 'source', position: Position.Right, id: 'value' }]}>
+      <label className="node-label">
         Name:
-        <input type="text" value={currName} onChange={(e) => setCurrName(e.target.value)} />
+        <input className="node-input" type="text" value={currName} onChange={(e) => setCurrName(e.target.value)} />
       </label>
-      <label style={{ display: 'flex', flexDirection: 'column', fontSize: '12px' }}>
+      <label className="node-label">
         Type:
-        <select value={inputType} onChange={(e) => setInputType(e.target.value)}>
+        <select className="node-input" value={inputType} onChange={(e) => setInputType(e.target.value)}>
           <option value="Text">Text</option>
           <option value="File">File</option>
         </select>
