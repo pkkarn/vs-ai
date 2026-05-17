@@ -1,9 +1,10 @@
 import { Handle, Position } from 'reactflow';
 
-export const BaseNode = ({ id, label, children, handles = [] }) => {
+export const BaseNode = ({ id, label, children, handles = [], style = {} }) => {
   return (
     <div style={{
-      width: 280,
+      width: style.width || 280,
+      height: style.height || 'auto',
       background: 'var(--node-bg)',
       border: '1px solid var(--glass-border)',
       boxShadow: 'var(--node-shadow)',
