@@ -2,7 +2,7 @@
 
 export const SubmitButton = () => {
     return (
-        <div style={{ position: 'fixed', bottom: '30px', right: '30px', zIndex: 100 }}>
+        <div style={{ position: 'fixed', top: '20px', right: '30px', zIndex: 100 }}>
             <button 
                 type="submit"
                 style={{
