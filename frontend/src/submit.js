@@ -3,7 +3,7 @@
 export const SubmitButton = () => {
     return (
         <div style={{ position: 'fixed', top: '20px', right: '30px', zIndex: 100 }}>
-            <button 
+            <button
                 type="submit"
                 style={{
                     background: 'linear-gradient(135deg, var(--accent-purple), var(--accent-blue))',

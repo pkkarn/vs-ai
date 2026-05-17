@@ -2,9 +2,9 @@ import { DraggableNode } from './draggableNode';
 
 export const PipelineToolbar = () => {
     return (
-        <div style={{ 
-            padding: '15px 30px', 
-            background: 'transparent', 
+        <div style={{
+            padding: '15px 30px',
+            background: 'transparent',
             position: 'relative',
             zIndex: 10
         }}>
@@ -12,13 +12,13 @@ export const PipelineToolbar = () => {
                 Build Pipeline
             </div>
             <div style={{ display: 'flex', gap: '20px', color: '#c4b5fd', fontSize: '13px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '15px', marginBottom: '20px' }}>
-                <span style={{color: '#fff', cursor: 'pointer'}}>All</span>
-                <span style={{cursor: 'pointer'}}>LLMs</span>
-                <span style={{cursor: 'pointer'}}>Multimodal</span>
-                <span style={{cursor: 'pointer'}}>Data</span>
-                <span style={{cursor: 'pointer'}}>VectorDB</span>
-                <span style={{cursor: 'pointer'}}>Logic</span>
-                <span style={{cursor: 'pointer'}}>Chat</span>
+                <span style={{ color: '#fff', cursor: 'pointer' }}>All</span>
+                <span style={{ cursor: 'pointer' }}>LLMs</span>
+                <span style={{ cursor: 'pointer' }}>Multimodal</span>
+                <span style={{ cursor: 'pointer' }}>Data</span>
+                <span style={{ cursor: 'pointer' }}>VectorDB</span>
+                <span style={{ cursor: 'pointer' }}>Logic</span>
+                <span style={{ cursor: 'pointer' }}>Chat</span>
             </div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px', alignItems: 'center' }}>
                 <DraggableNode type='customInput' label='Input' />

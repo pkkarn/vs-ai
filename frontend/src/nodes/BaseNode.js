@@ -2,8 +2,8 @@ import { Handle, Position } from 'reactflow';
 
 export const BaseNode = ({ id, label, children, handles = [] }) => {
   return (
-    <div style={{ 
-      width: 280, 
+    <div style={{
+      width: 280,
       background: 'var(--node-bg)',
       border: '1px solid var(--glass-border)',
       boxShadow: 'var(--node-shadow)',
@@ -20,10 +20,10 @@ export const BaseNode = ({ id, label, children, handles = [] }) => {
           style={{ ...h.style, background: 'var(--accent-purple)', width: '10px', height: '10px', border: '2px solid #20084a', zIndex: 10 }}
         />
       ))}
-      <div style={{ 
+      <div style={{
         background: 'var(--node-header)',
         padding: '12px 16px',
-        fontWeight: '600', 
+        fontWeight: '600',
         fontSize: '14px',
         color: 'var(--text-primary)',
       }}>
